@@ -1,0 +1,31 @@
+.slider h3,
+.slider h5, 
+.clients h3,
+.portfolio h3{
+	text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
+	/*bayangan kekanan,kebawah,blur,wrn hitam,transplatasi setengah*/
+}
+
+.parallax-container,
+.portfolio{
+	/*height: 240px;*/
+	height: 20%;
+	/*otomatis mengikuti*/
+}
+.parallax img{
+	filter: grayscale(); 
+	/*agar hitam putih*/
+	opacity: 0.5 !important;
+	/*agar ngeblur, !important = spaya tdk bentrok dgn framework bawaan*/
+}
+
+.clients img{
+	max-width: 150px;
+	filter: drop-shadow(1px 1px 1px rgba(0,0,0,0.8));
+	/*bagian transparan diabaikan */
+}
+
+section, footer{
+	padding: 20px 0;
+	/*agar warna backgroundnya our services dempet*/
+}

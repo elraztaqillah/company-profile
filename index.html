@@ -1,0 +1,434 @@
+ <!DOCTYPE html>
+<html>
+    <head>
+      <!--Import Google Icon Font-->
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <!--Import materialize.css-->
+      <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+
+      <!--Let browser know website is optimized for mobile-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+      <title>Company Profile</title>
+
+      <!-- My CSS -->
+      <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+
+<!-- @untuk dokumentasi bisa melihat di component -->
+<!-- @untuk awalan html, geser kekiri (TAB+SHIFT)
+@untuk awalan isi body, geser kekanan 
+ -->  <body id="home" class="scrollspy">
+
+    <!-- Navbar-Fixed navbar -->
+    <div class="navbar-fixed">
+      <nav class="blue accent-4">
+        <!-- #css-color; utk ganti warna -->
+
+        <ul id="dropdown1" class="dropdown-content">
+          <li><a href="#!">one</a></li>
+          <li><a href="#!">two</a></li>
+          <li class="divider"></li>
+          <li><a href="#!">three</a></li>
+        </ul>
+
+        <div class="container">
+          <div class="nav-wrapper">
+            <a href="#home" class="brand-logo">Company</a>
+            <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+            <!-- @Mobile Collapse Button; untuk tampilan button mobile (hamburger menu) -->
+            <ul class="right hide-on-med-and-down">
+             <li><a href="#about">About Us</a></li>
+              <li><a href="#clients">Clients</a></li>
+              <li><a href="#services">Services</a></li>
+              <li><a href="#portfolio">Portfolio</a></li>
+              <li><a href="#contact">Contact Us</a></li>
+
+              <li><a class="dropdown-trigger" href="#!" data-target="dropdown1">Dropdown<i class="material-icons right">arrow_drop_down</i></a></li>
+              <!-- Navbar > Navbar Dropdown Menu  -->
+            </ul>  
+
+           <!--  <div class="row">
+              <div class="col m4 right mr-4">
+                      <nav>
+              <div class="nav-wrapper right-align">
+                <form>
+                  <div class="input-field">
+                    <input id="search" type="search" required>
+                    <label class="label-icon" for="search"><i class="material-icons">search</i></label>
+                    <i class="material-icons">close</i>
+                  </div>
+                </form>
+              </div>
+            </nav>
+            </div> 
+            </div> -->
+        </div>
+      </nav>
+    </div>
+
+
+ <!-- SideNav -->
+        <!-- @Mobile Collapse Button; untuk tampilan button mobile (hamburger menu) -->
+      <ul class="sidenav" id="mobile-demo">
+              <li><a href="#about">About Us</a></li>
+              <li><a href="#clients">Clients</a></li>
+              <li><a href="#services">Services</a></li>
+              <li><a href="#portfolio">Portfolio</a></li>
+              <li><a href="#contact">Contact Us</a></li>
+      </ul>
+
+
+<!-- Slider -->
+
+      <div class="slider">
+        <ul class="slides">
+          <li>
+            <img src="img/slider/4.png"> <!-- random image -->
+            <div class="caption left-align">
+              <h3>This is our big Tagline!</h3>
+              <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+            </div>
+          </li>
+          <li>
+            <img src="img/slider/2.png"> <!-- random image -->
+              <div class="caption center-align">
+                <h3>This is our big Tagline!</h3>
+                <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+              </div>
+          </li>
+          <li>
+            <img src="img/slider/3.png"> <!-- random image -->
+              <div class="caption right-align">
+                <h3>This is our big Tagline!</h3>
+                <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+              </div>
+          </li>
+        </ul>
+      </div>
+
+<!-- About Us -->
+<!-- @css grid -->
+<section id="about" class="about scrollspy">
+    <!-- @scrollspy; agar scroll smoth -->
+
+  <div class="container">
+    <div class="row">
+      <h3 class="center  grey-text text-darken-3">About Us</h3>
+      <!-- add text front darken utk hasil lebih gelap -->
+        <div class="col m6">
+          <!-- m6= medium 6 -->
+          <h5 class="grey-text text-darken-3">We Are Professionals</h5>
+          <p class="light">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+          consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+          cillum dolore eu fugiat nulla pariatur. </p>
+        </div>
+      <div class="col m6">
+        <p>WEB DEVELOPMENT</p>
+           <div class="progress">
+              <div class="determinate blue accent-4" style="width: 80%"></div>
+           </div>
+         <!-- @preloader -->
+         <p>UI DESIGN</p>
+           <div class="progress">
+              <div class="determinate blue accent-4" style="width: 60%"></div>
+           </div>
+         <p>MOBILE APP DEVELOPMENT</p>
+           <div class="progress">
+              <div class="determinate blue accent-4" style="width: 40%"></div>
+           </div>
+      </div>
+    </div>
+  </div>
+           <!--  <div class="container">
+              <div class="row left">
+                <h2>About Us</h2>
+              </div>
+            </div> -->
+</section>
+
+<!-- Client
+@parallax -->
+
+    <div id="clients" class="parallax-container scrollspy">
+      <div class="parallax"><img src="img/slider/1.png"></div>
+
+      <div  class="container clients ">
+          <h3 class="center light white-text">Our Client</h3>
+          <div class="row">
+            <div class="col m4 s12 center">
+              <!-- karna akan masukkan 3 gambar, maka 12/3=m4 -->
+              <!-- medium bikin 3 kolom, small bikin 12 jdi full = agar turun jika tampilan mobile -->
+              <img src="img/clients/gojek.png" >
+            </div>
+            <div class="col m4 s12 center">
+              <img src="img/clients/tokopedia.png" >
+            </div>
+            <div class="col m4 s12 center">         
+              <img src="img/clients/traveloka.png" >
+            </div>
+          </div>
+      </div>
+    </div>
+
+
+    <!-- Services -->
+<section id="services" class="services grey lighten-3 scrollspy">
+  <div class="container">
+    <div class="row">
+      <h3 class="center grey-text text-darken-3">Our Services</h3>
+      <div class="col m4 s12">
+        <div class="card-panel center">
+          <!-- memanggil card di material -->
+          <i class="material-icons medium">desktop_windows</i>
+          <!-- @icons, & size  -->
+          <h5>Web Development</h5>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+          tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+      </div>
+       <div class="col m4 s12">
+        <div class="card-panel center">
+          <!-- memanggil card di material -->
+          <i class="material-icons medium">directions_run</i>
+          <!-- @icons, & size  -->
+          <h5>Ui Design</h5>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+          tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+      </div>
+       <div class="col m4 s12">
+        <div class="card-panel center">
+          <!-- memanggil card di material -->
+          <i class="material-icons medium">smartphone</i>
+          <!-- @icons, & size  -->
+          <h5>Mobile App</h5>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+          tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- Portfolio -->
+<section id="portfolio" class="portfolio scrollspy">
+  <div class="container portfolio">
+    <h3 class="center light white-text ">Portfolio</h3>
+    <div class="row">
+          <div class="col m3 s12">
+            <div class="card" >
+              <img class="responsive-img card-img-top materialboxed" src="img/portfolio/1.png" alt="Card image cap">
+              <!-- media ,@materialboxed; agar gambar diklik muncul -->
+              <div class="card-body">
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col m3 s12">
+           <div class="card" >
+              <img class="responsive-img card-img-top materialboxed" src="img/portfolio/2.png" alt="Card image cap">
+              <div class="card-body">
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col m3 s12">
+            <div class="card" >
+              <img class="responsive-img card-img-top materialboxed" src="img/portfolio/3.png" alt="Card image cap">
+              <div class="card-body">
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col m3 s12">
+           <div class="card" >
+              <img class="responsive-img card-img-top materialboxed" src="img/portfolio/4.png" alt="Card image cap">
+              <div class="card-body">
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              </div>
+            </div>
+          </div>
+    </div>
+
+    <div class="row">
+          <div class="col m3 s12">
+            <div class="card" >
+              <img class="responsive-img card-img-top materialboxed" src="img/portfolio/5.png" alt="Card image cap">
+              <!-- media ,@materialboxed; agar diklik muncul -->
+              <div class="card-body">
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col m3 s12">
+            <div class="card" >
+              <img class="responsive-img card-img-top materialboxed" src="img/portfolio/6.png" alt="Card image cap">
+              <div class="card-body">
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col m3 s12">
+            <div class="card" >
+              <img class="responsive-img card-img-top materialboxed" src="img/portfolio/4.png" alt="Card image cap">
+              <div class="card-body">
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col m3 s12">
+            <div class="card" >
+              <img class="responsive-img card-img-top materialboxed" src="img/portfolio/2.png" alt="Card image cap">
+              <div class="card-body">
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              </div>
+            </div>
+          </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Contact Us         -->
+<section id="contact" class="contact grey lighten-3 scrollspy">
+  <div class="container">
+    <h3 class="light grey-text text-darken-3 center">Contact Us</h3>
+     <div class="row">
+      <div class="col m5 s12">
+        <div class="card-panel blue accent-4 accent-4 center white-text">
+              <!-- white-text utk mengubah warna icon  -->
+          <i class="material-icons">email</i>
+          <h5>Contact</h5>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+          tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+
+        <!-- collections/list panel in bootstrap  -->
+          <ul class="collection with-header">
+          <li class="collection-header"><h4>Our Office</h4></li>
+          <li class="collection-item">Company</li>
+          <li class="collection-item">Jl.Mawar, Jakarta Pusat</li>
+          <li class="collection-item">Jakarta, Indonesia</li>
+          </ul>
+      </div>
+
+      <div class="col m7 s12">
+        <form>
+            <div class="card-panel">
+                  <h5>Please fill out this form</h5>
+                  <!-- forms > text inputs -->
+                  <div class="input-field">
+                <input id="last_name" type="text" required class="validate">
+                <!-- required; wajib diisi -->
+                <label for="last_name">Name</label>
+                </div>
+              <div class="input-field">
+                <input id="email" type="email" class="validate">
+                <!-- validate; agar harus menggunakan @ pada email  -->
+                <label for="email">Email</label>
+              </div>
+              <div class="input-field">
+                <input id="phone" type="text" class="validate">
+                <label for="phone">Phone Number</label>
+              </div>
+              <div class="input-field">
+                <input id="message" class="materialize-textarea">
+                <label for="message">Message</label>
+              </div>
+              <button type="submit" class="btn blue accent-4">Send</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Footer  -->
+<footer class="blue accent-4 white-text center">
+  <div class="container">   
+    <div class="row">
+      <div class="col m3 s6">
+        <h5 class="white-text text-darken-3">Produk</h5>
+        <p align=left>Professional</p>
+        <p align=left>Business</p>
+        <p align=left>Enterprise</p>
+      </div>
+
+<div class="col m3 s6">
+  <h5 class="white-text text-darken-3">Dukungan</h5>
+        <p align=left>Pusat Bantuan</p>
+        <p align=left>Hubungi Kami</p>
+        <p align=left>Privasi & ketentuan</p>
+        <p align=left>Kebijakan cookie</p>
+
+</div>
+
+<div class="col m3 s6">
+  <h5 class="white-text text-darken-3">Komunitas</h5>
+        <p align=left>Blog</p>
+        <p align=left>Pengembang</p>
+        <p align=left>Referensi</p>
+</div>
+
+<div class="col m3 s6">
+  <h5 class="white-text text-darken-3">Perusahaan</h5>
+        <p align=left>Tentang Kami</p>
+        <p align=left>Lowongan</p>
+        <p align=left>Mitra</p>
+</div>
+
+    </div>
+  </div>
+</section>
+
+<p class="flow-text">Company. Copyright 2021.</p>
+</footer>
+ 
+
+    <!--JavaScript at end of body for optimized loading-->
+    <script type="text/javascript" src="js/materialize.min.js"></script>  
+    <script type="text/javascript">
+      const sidenav = document.querySelectorAll('.sidenav');
+            // meminta javascript utk cari selector dgn class .sidenav
+      M.Sidenav.init(sidenav);
+      // materialize jalankan sidenav inisialisasi element ..
+
+      const slider = document.querySelectorAll('.slider');
+      M.Slider.init(slider, {
+        indicators: false,
+        height: 500,
+        // transition: 600, 
+        duration: 600,
+        interval: 3000
+      });
+
+      const parallax = document.querySelectorAll('.parallax');
+      M.Parallax.init(parallax);
+
+      // indicator = icon titik2
+      // height = tinggi
+      // duration = time text
+      // interval = pindah gambar , 6000=6 sec
+
+      const materialbox = document.querySelectorAll('.materialboxed');
+      M.Materialbox.init(materialbox);
+
+      const scroll = document.querySelectorAll('.scrollspy');
+      M.ScrollSpy.init(scroll, {
+        scrollOffset: 50
+        // mengatur tinggi 
+      });
+       // <!-- @scrollspy; agar scroll smoth -->
+
+       const dropdown = document.querySelectorAll('.dropdown-trigger');
+       M.Dropdown.init(dropdown);
+
+       // javascript > dropdown; menjalankan perintah dropdown
+
+    </script>
+  </body>
+</html>
