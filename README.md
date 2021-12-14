@@ -1,16 +1,12 @@
 <h2><b>Intro</b></h2>
 
-Hi everyone! this website builds with bootstrap4, bootstrap is a CSS framework in building a web.
+Hi everyone! this website builds with Materialize, Materialize is a CSS framework in building a web.
 
 please feedback to support me. Thank you :)
 
 <h2><b>Demo</b></h2>
 
 ![image](https://user-images.githubusercontent.com/76187141/145925896-362adb58-a911-4dff-8616-431ecb2c16f7.png)
-
-2
-![image](https://user-images.githubusercontent.com/76187141/145926227-bc4fc9ae-8a71-4b1b-89c0-f47e2bb3e709.png)
-
 
 
 <p align="center">
